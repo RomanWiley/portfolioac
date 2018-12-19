@@ -1,9 +1,13 @@
+body {
+width:  900px;
+margin-left: 160px; /* Same as the width of the sidebar */
+margin: 20px auto;
+background-color: lightgreen;
+/* background-image: url("../Images/image_06b.jpg"); */
+padding: 0px 10px;
 
-   body {
-    background-image :url("../images/background_01.jpg");
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    }  
+
+}
 
 /*
 #cclogo.left {
@@ -161,23 +165,3 @@ overflow: auto;
     filter: opacity(70%);
   }
 
-  a:link {
-      color: green;
-      background-color: transparent;
-      text-decoration: none;
-  }
-  a:visited {
-      color: pink;
-      background-color: transparent;
-      text-decoration: none;
-  }
-  a:hover {
-      color: red;
-      background-color: transparent;
-      text-decoration: underline;
-  }
-  a:active {
-      color: yellow;
-      background-color: transparent;
-      text-decoration: underline;
-  }
