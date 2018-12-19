@@ -1,0 +1,136 @@
+<!doctype HTML>
+<title>CV Alex Coenen</title>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href="css/opmaak_pf.css" >
+    
+
+</head>
+
+<!-- // https://www.w3schools.com/csS/css3_buttons.asp -->
+
+      
+<body>
+
+<div class="container-fluid"> <!-- responsive container -->
+
+    <div class="row" > <!-- eerste deel met tekstbox, begin first row -->
+               
+            <div class="col-2"> <!-- linker spacing -->
+            </div>
+  
+            <div class="col-8" id="firstbox">
+
+<p id="openpar">
+
+    <img src="images/image_06.jpg" style="float:right; border-radius: 20%">
+    <h2><b>Inleiding</b></h2>
+    <br>
+    <br>
+    In dit CV vindt u een verkort ervaringsoverzicht.<br>
+     In het hoofdstuk kenniscluster treft u een volledig overzicht aan van de technische kennis, 
+     waarbij ik voor uw gemak de kennis heb geclusterd. <br>
+     In het opleidingenoverzicht staan alle algemene en technisch gevolgde opleidingen opgesomd.<br><br>
+    
+    Mocht er behoefte zijn aan meer informatie; <br>
+    er bestaat ook een uitgebreide versie van dit CV met daarin detailinformatie per project/baan.<br>
+    <br>
+    
+</p>
+
+            </div> <!-- eind firstbox-->
+               
+            <div class="col-2"> <!-- rechter spacing -->
+            </div>
+        </div> <!-- einde first row -->
+
+<div class="row pt-5" > <!-- start 2nd row -->
+  
+            <div class="col-2">blok 1 naast knop <!-- linker spacing 2nd row -->
+            </div>
+
+            <div class="col-4 onderdelen" > <!-- knop linksboven -->
+
+    <h2 id="h2profiel">Verkort profiel</h2>
+    <script>
+        document.getElementById("h2profiel").addEventListener("click", funcProfiel);
+        
+        function funcProfiel() {
+            /*document.getElementById("h2profiel").innerHTML = "YOU CLICKED ME!";*/
+            window.open("profiel.html","_self")
+        }
+        </script>
+        
+            </div>
+
+    <div class="col-4 onderdelen"> <!-- knop rechtsboven -->
+
+    <h2 id="h2werkervaring">Werkervaring</h2>
+    <script>
+        document.getElementById("h2werkervaring").addEventListener("click", funcWerkervaring);
+        
+        function funcWerkervaring() {
+            /*document.getElementById("h2werkervaring").innerHTML = "YOU CLICKED ME!";*/
+            window.open("werkervaring.html","_self")
+        }
+        </script>
+  
+            
+    </div>
+</div> <!-- einde 2nd row -->
+
+<div class="row pt-5" ><!-- start derde row -->
+<div class="col-2">tekst naast bovenste 2 nnnn <!-- spacing naast row 3 -->
+    </div>
+
+<div class="col-4 onderdelen"> <!-- knop linksonder, row 3-->
+        <h2 id="h2kenniscluster">Kenniscluster</h2>
+
+    <script>
+        document.getElementById("h2kenniscluster").addEventListener("click", funcKenniscluster);
+        
+        function funcKenniscluster() {
+            /*document.getElementById("h2kenniscluster").innerHTML = "YOU CLICKED ME!";*/
+            window.open("kenniscluster.html","_self")
+        }
+        </script>
+                    
+</div>
+
+<div class="col-4 onderdelen"> <!-- knop rechts onder, row 3-->
+                            <h2 id="h2hobbys">Hobby's</h2>
+							<script>
+        document.getElementById("h2hobbys").addEventListener("click", funcHobbys);
+        
+        function funcHobbys() {
+            /*document.getElementById("h2hobbys").innerHTML = "YOU CLICKED ME!";*/
+            window.open("hobbys.html","_self")
+        }
+        </script>
+                            
+</div>
+
+    <div class="col-2"> <!-- spacing rechts, row 3 -->
+    </div>                                            
+</div>
+</div>
+<!-- Side navigation -->
+ <div class="sidenav">
+
+        <a href="personalia.html">Personalia</a>  <!-- hier wil ik een functie aanroepen die de openingsparagraaf wijzigt -->
+        <a href="profiel.html">Profiel</a>
+        <a href="werkervaring.html">Werkervaring</a>
+        <a href="kenniscluster.html">Kenniscluster</a>
+       <br>
+        <a href="index.html">Terug</a>
+    
+      </div>
+    
+</body>
+
+</html>
+
