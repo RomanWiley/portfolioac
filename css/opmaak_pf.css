@@ -1,0 +1,183 @@
+
+   body {
+    background-image :url("../images/background_01.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    }  
+
+/*
+#cclogo.left {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+*/
+
+
+#firstbox { /* de ' houder' voor de intro-tekst */
+height: 300px;
+margin: 20px;
+color: darkblue;
+background-color: lightblue;
+border-style: solid;
+border-width: 2px;
+border-color: purple;
+border-spacing: 5px;
+border-radius:20px;
+padding: 20px;
+box-shadow: 20px 20px 7px grey;
+background-image: url("../images/portfolio2.jpg");
+overflow: auto;
+
+
+}
+
+#naam {
+    font-weight: bold
+}
+
+.onderdelen
+{
+    width: 45%;
+    margin: 5px;
+    float: left;
+    padding:10px;
+    background-color: rgb(13, 116, 18);
+    color: beige;
+    font-weight: bold;
+    border-style: solid;
+    box-shadow: 10px 10px 5px grey;
+    border-radius:20px;
+
+}
+.trefwoorden
+{
+    width: 45%;
+    margin: 5px;
+    float: left;
+    padding:10px;
+	text-align: center;
+    background-color: rgba(105, 50, 18, 0.644);
+    color: beige;
+    font-weight: bold;
+    border-style: solid;
+    box-shadow: 10px 10px 5px grey;
+    border-radius:20px;
+
+}
+
+
+ /* The sidebar menu */
+ .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+ /* Popup container */
+ .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+} 
+
+.filtered {
+    filter: opacity(70%);
+  }
+
+  a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+  a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+  }
