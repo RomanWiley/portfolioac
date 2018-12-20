@@ -44,13 +44,15 @@ overflow: auto;
     margin: 5px;
     float: left;
     padding:10px;
+    text-align: center;
+    vertical-align: middle;
     background-color: rgb(13, 116, 18);
     color: beige;
     font-weight: bold;
     border-style: solid;
     box-shadow: 10px 10px 5px grey;
     border-radius:20px;
-
+    
 }
 .trefwoorden
 {
@@ -58,7 +60,8 @@ overflow: auto;
     margin: 5px;
     float: left;
     padding:10px;
-	text-align: center;
+    text-align: center;
+    vertical-align: middle;
     background-color: rgba(105, 50, 18, 0.644);
     color: beige;
     font-weight: bold;
