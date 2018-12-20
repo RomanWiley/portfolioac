@@ -46,27 +46,34 @@
                       <!-- Content, hier lege ruimte voor layout -->
                    
                 </div>
-                <div class="col-4">
-                        <a href="index_cv.html" target="_self"> <button type="button" class="btn btn-success" style="width: 90%; height: 90%">CV</button> </a>
-                  </div>
-                  <div class="col-4">
-                        <a href="index_lp.html" target="_self"> <button type="button" class="btn btn-success" style="width: 90%; height: 90%">Leerplan</button> </a>
-                  </div>
+<!-- upper left button-->
+<div class="onderdelen col-4" id="div_indexcv" >
+      <h2 id="h2_indexcv">CV</h2>
+</div>
+
+<!-- upper right button -->
+<div class="onderdelen col-4" id="div_indexlp">
+      <h2 id="h2_indexlp">Leerplan</h2>
+</div>
                     <div class="col-2">
                   <!-- Content -->
                 </div>
-              </div>       
+              </div><!-- end of row 1 with buttons -->
                     <div class="row pt-5" >
                             <div class="col-2">
                       <!-- Content, hier lege ruimte voor layout -->
                        
                     </div>
-                    <div class="col-4">
-                            <a href="#" target="_self"> <button type="button" class="btn btn-success" style="width: 90%; height: 90%">Foto's</button> </a>
-                      </div>
-                      <div class="col-4">
-                            <a href="myworks.html" target="_self"> <button type="button" class="btn btn-success" style="width: 90%; height: 90%">My works</button> </a>
-                      </div>
+<!-- lower left button-->
+<div class="onderdelen col-4" id="div_fotos" >
+            <h2 id="h2_fotos">Foto's</h2>
+      </div>
+
+<!-- lower left button-->
+<div class="onderdelen col-4" id="div_myworks" >
+            <h2 id="h2_myworks">My works</h2>
+      </div>
+
                             <div class="col-2">
                       <!-- Content -->
                     </div>
@@ -76,12 +83,39 @@
  <!-- Side navigation -->
  <div class="sidenav">
 
-    <a href="index_cv.html">CV</a>  <!-- hier wil ik een functie aanroepen die de openingsparagraaf wijzigt -->
+    <a href="index_cv.html">CV</a>  <!-- hier wil ik later een functie aanroepen die alleen de openingsparagraaf wijzigt -->
     <a href="index_lp.html">Leerplan</a>
    <br>
 
 </div>
+                                            
+<script>
+            // click on CV-button, open app in current window
+                document.getElementById("div_indexcv").addEventListener("click", func_CV);
+        function func_CV() {
+                window.open("https://portfolioac.herokuapp.com/index_cv.html", "_self")
+      }        
 
+      // click on Leerplan-button, open app in current window
+      document.getElementById("div_indexlp").addEventListener("click", func_Leerplan);
+        function func_Leerplan() {
+                window.open("https://portfolioac.herokuapp.com/index_lp.html", "_self")
+        }
+        
+            // click on Foto's-button, open app in current window      
+      document.getElementById("div_indexlp").addEventListener("click", func_fotos);
+        function func_fotos() {
+                window.open("#", "_self")
+        }
+        
+            // click on My Works-button, open app in current window
+      document.getElementById("div_myworks").addEventListener("click", func_myworks);
+        function func_myworks() {
+                window.open("https://portfolioac.herokuapp.com/myworks.html", "_self")
+        }
+        
+        </script>
+        
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
