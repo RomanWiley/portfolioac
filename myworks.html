@@ -54,14 +54,44 @@
     <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
 
-    <div class="col-2"></div><!-- 2 col right space-->
+</div><!--end of col-8-->
 
-</div><!--end of row-->
+<div class="col-2"></div><!-- 2 col right space-->
+  </div><!-- end of row 1-->
+
+<div class="row pt-5">
+  
+<div class="col-2"></div>
+<div class="onderdelen col-4" id="divadresboekje" >
+
+        <h2 id="h2Adresboekje">Adresboekje</h2>
+            
+</div>
+<div class="col-4 onderdelen" id="divrekenmachine">
+
+        <h2 id="h2Rekenmachine">Rekenmachine</h2>
+
+</div>
+
+<div class="col-2"></div>
+
+</div><!-- end of row -->
 </div><!--end of firstbox-->
 
-
-
                                             
+<script>
+    // click on adresboekje, open app in new window
+        document.getElementById("divadresboekje").addEventListener("click", funcadresboekje);
+function funcadresboekje() {
+        window.open("https://coenena.herokuapp.com/", "_blank")
+    // click on rekenmachine, open app in new window
+}        document.getElementById("divrekenmachine").addEventListener("click", funcrekenmachine);
+function funcrekenmachine() {
+        window.open("https://coenena.herokuapp.com/", "_blank")
+}
+
+</script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
