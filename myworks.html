@@ -26,7 +26,7 @@
 
   </div>
   <div class="row pt-5">
-      <div class="col-2"></div>
+      <div class="col-2"></div> <!-- empty space-->
 
     <div class="col-8" id="firstbox">
  
@@ -57,7 +57,7 @@
 </div><!--end of col-8-->
 
 <div class="col-2"></div><!-- 2 col right space-->
-  </div><!-- end of row 1-->
+  </div><!-- end of row  1-->
 
 <div class="row pt-5">
   
@@ -75,19 +75,19 @@
 
 <div class="col-2"></div>
 
-</div><!-- end of row -->
+</div><!-- end of buttonrow 1 (row 2) -->
 </div><!--end of firstbox-->
 
                                             
 <script>
     // click on adresboekje, open app in new window
-        document.getElementById("divadresboekje").addEventListener("click", funcadresboekje);
-function funcadresboekje() {
+        document.getElementById("divadresboekje").addEventListener("click", func_adresboekje);
+function func_adresboekje() {
         window.open("https://coenena.herokuapp.com/", "_blank")
     // click on rekenmachine, open app in new window
-}        document.getElementById("divrekenmachine").addEventListener("click", funcrekenmachine);
-function funcrekenmachine() {
-        window.open("https://coenena.herokuapp.com/", "_blank")
+}        document.getElementById("divrekenmachine").addEventListener("click", func_rekenmachine);
+function func_rekenmachine() {
+        window.open("https://rekenmachineac.herokuapp.com/", "_blank")
 }
 
 </script>
