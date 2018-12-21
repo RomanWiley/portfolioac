@@ -10,12 +10,35 @@
     <link rel='stylesheet' type='text/css' href="css/opmaak_pf.css" >
 
  </head>
-
-<!-- // https://www.w3schools.com/csS/css3_buttons.asp -->
-
       
 <body>
-  
+
+ <!-- Side navigation -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                  <a class="nav-link"  href="https://portfolioac.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="index_cv.html">CV <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="index_lp.html">Leerplan <span class="sr-only">(current)</span></a>
+                </li>
+
+<!--  if required, use the disabled links here  
+                  <li class="nav-item">
+            <a class="nav-link disabled" href="#!">Disabled</a>
+          </li>
+      -->
+        </ul>
+      </div>
+    </nav>
+
     <div class="container-fluid"> <!-- responsive container -->
 
         <div class="row" >
@@ -23,10 +46,10 @@
                 </div>
 
                 <div class="col-8" id="firstbox">
-            <p id="openpar">
+            <div id="openpar" style="font-size: 1.5vw">
                 <img src="images/image_06.jpg" style="float: right; border-radius: 20%">
             
-                <h2><b>Inleiding</b></h2>
+                <h2 style="font-size: 3vw"><b>Inleiding</b></h2>
                 <br>
                 <br>
                 Deze portfolio dient om informatie te verstrekken over mij, Alex Coenen.<br><br>
@@ -35,7 +58,7 @@
                 Als de kleur van de knoppen hieronder verandert in bruin, gaat het om een trefwoord van toepassing op het betreffende onderwerp.<br>
             <br>
                 
-            </p>
+            </div>
           </div>
           <div class="col-2">
                       <!-- Content, hier lege ruimte voor layout -->
@@ -46,6 +69,7 @@
                       <!-- Content, hier lege ruimte voor layout -->
                    
                 </div>
+
 <!-- upper left button-->
 <div class="onderdelen col-4" id="div_indexcv" >
       <h2 id="h2_indexcv">CV</h2>
@@ -79,15 +103,6 @@
                     </div>
                   </div>
       </div>
-
- <!-- Side navigation -->
- <div class="sidenav">
-
-    <a href="index_cv.html">CV</a>  <!-- hier wil ik later een functie aanroepen die alleen de openingsparagraaf wijzigt -->
-    <a href="index_lp.html">Leerplan</a>
-   <br>
-
-</div>
                                             
 <script>
             // click on CV-button, open app in current window

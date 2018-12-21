@@ -1,12 +1,10 @@
-body {
-width:  900px;
-margin-left: 160px; /* Same as the width of the sidebar */
-margin: 20px auto;
-background-color: lightgreen;
-padding: 0px 10px;
 
+   body {
+    background-image :url("../images/background_01.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    }  
 
-}
 
 /*
 #cclogo.left {
