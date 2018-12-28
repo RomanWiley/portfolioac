@@ -39,29 +39,27 @@
       </div>
     </nav>
 
-    <div class="container-fluid"> <!-- responsive container -->
+<div class="row" >
+          <div class="col-2">
+            <!-- Content, left side free space -->
+          </div>
 
-        <div class="row" >
-                <div class="col-2">
-                </div>
-
-                <div class="col-8" id="firstbox">
-            <div id="openpar" style="font-size: 1.5vw">
-                <img src="images/image_06.jpg" style="float: right; border-radius: 20%">
+          <div class="col-8" style="font-size: 1.4vw">
+              
+                <div id="firstbox">
             
-                <h2 style="font-size: 3vw"><b>Inleiding</b></h2>
+                <img src="images/image_06.jpg" style="width: 17%; height: auto; float: right; border-radius: 20%">
+            
+                <h2 style="font-size: 2.3vw"><b>Inleiding</b></h2>
                 <br>
-                <br>
-                Deze portfolio dient om informatie te verstrekken over mij, Alex Coenen.<br><br>
+                <b>Deze portfolio dient om informatie te verstrekken over mij, Alex Coenen.<br><br>
                 Navigeer via de tekst onder of de linker navigatiebalk.<br>
-                <br>
-                Als de kleur van de knoppen hieronder verandert in bruin, gaat het om een trefwoord van toepassing op het betreffende onderwerp.<br>
-            <br>
-                
-            </div>
+                Als de kleur van de knoppen hieronder verandert in bruin, gaat het om een trefwoord van toepassing op het betreffende onderwerp.</b>
+
+                </div>
           </div>
           <div class="col-2">
-                      <!-- Content, hier lege ruimte voor layout -->
+                      <!-- Content, right side free space -->
                     </div>
         </div>
         <div class="row pt-5">
@@ -102,7 +100,6 @@
                       <!-- Content -->
                     </div>
                   </div>
-      </div>
                                             
 <script>
             // click on CV-button, open app in current window
@@ -141,6 +138,8 @@
 $(function(){
   $('[data-toggle="popover"]').popover()
 });
+
+$('#bigtext').bigtext();
 </script>
 
 </body>
