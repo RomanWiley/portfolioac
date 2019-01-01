@@ -30,8 +30,8 @@ border-radius:20px;
 padding: 20px;
 box-shadow: 20px 20px 7px grey;
 background-image: url("../images/image_01filtered.jpg");
+background-size: cover;
 overflow: auto;
-
 }
 
 #naam {
