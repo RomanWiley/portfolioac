@@ -47,6 +47,7 @@
     <div class="col-2"></div>
 
       <div class="col-8" id="firstbox">
+          <b>
  <p id="openpar">
     <img src="images/image_06.jpg" style="float:right; border-radius: 20%">
 
@@ -63,6 +64,7 @@
 <br>
     
 </p>
+</b>
 
     </div><!-- end of first box -->
 
@@ -73,68 +75,30 @@
 <div class="row">
     <div class="col-2"></div>
 
-
-<div class="onderdelen col-4" >
-
+<div class="onderdelen col-4" id="div_profiel" >
     <h2 id="h2profiel">Verkort profiel</h2>
-    <script>
-        document.getElementById("h2profiel").addEventListener("click", funcProfiel);
-        
-        function funcProfiel() {
-            /*document.getElementById("h2profiel").innerHTML = "YOU CLICKED ME!";*/
-            window.open("profiel.html","_self")
-        }
-        </script>
-        
 </div>
 
-<div class="onderdelen col-4">
-
+<div class="onderdelen col-4" id="div_werkervaring">
     <h2 id="h2werkervaring">Werkervaring</h2>
-    <script>
-        document.getElementById("h2werkervaring").addEventListener("click", funcWerkervaring);
-        
-        function funcWerkervaring() {
-            /*document.getElementById("h2werkervaring").innerHTML = "YOU CLICKED ME!";*/
-            window.open("werkervaring.html","_self")
-        }
-     </script>
-  
 </div>
-<div class="col-2"></div>
+
+    <div class="col-2"></div>
 
 </div><!-- end second row -->
+
 <div class="row">
     <div class="col-2"></div>
 
-
-
-<div class="onderdelen col-4">
-                    <h2 id="h2kenniscluster">Kenniscluster</h2>
-					<script>
-        document.getElementById("h2kenniscluster").addEventListener("click", funcKenniscluster);
-        
-        function funcKenniscluster() {
-            /*document.getElementById("h2kenniscluster").innerHTML = "YOU CLICKED ME!";*/
-            window.open("kenniscluster.html","_self")
-        }
-        </script>
-                
+<div class="onderdelen col-4" id="div_kenniscluster">
+        <h2 id="h2kenniscluster">Kenniscluster</h2>
 </div>
 
-<div class="onderdelen col-4">
-                            <h2 id="h2hobbys">Hobby's</h2>
-							<script>
-        document.getElementById("h2hobbys").addEventListener("click", funcHobbys);
-        
-        function funcHobbys() {
-            /*document.getElementById("h2hobbys").innerHTML = "YOU CLICKED ME!";*/
-            window.open("hobbys.html","_self")
-        }
-        </script>
-                            
+<div class="onderdelen col-4" id="div_hobbys">
+    <h2 id="h2hobbys">Hobby's</h2>
 </div>
-<div class="col-2"></div>
+
+    <div class="col-2"></div>
 
 </div><!-- end third row -->
                                        
@@ -144,7 +108,35 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+            document.getElementById("div_profiel").addEventListener("click", funcProfiel);
+            
+            function funcProfiel() {
+                /*document.getElementById("h2profiel").innerHTML = "YOU CLICKED ME!";*/
+                window.open("profiel.html","_self")
+            }
+            document.getElementById("div_werkervaring").addEventListener("click", funcWerkervaring);
+        
+            function funcWerkervaring() {
+                /*document.getElementById("h2werkervaring").innerHTML = "YOU CLICKED ME!";*/
+            window.open("werkervaring.html","_self")
+        }
+            document.getElementById("div_kenniscluster").addEventListener("click", funcKenniscluster);
+        
+            function funcKenniscluster() {
+            /*document.getElementById("h2kenniscluster").innerHTML = "YOU CLICKED ME!";*/
+            window.open("kenniscluster.html","_self")
+        }
 
+            document.getElementById("div_hobbys").addEventListener("click", funcHobbys);
+        
+            function funcHobbys() {
+            /*document.getElementById("h2hobbys").innerHTML = "YOU CLICKED ME!";*/
+            window.open("hobbys.html","_self")
+        }
+
+            </script>
+           
 </body>
 
 </html>
