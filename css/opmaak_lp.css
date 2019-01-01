@@ -18,7 +18,7 @@
 
 
 #firstbox { /* de ' houder' voor de intro-tekst */
-height: 300px;
+height: 100%; width: 100%;
 margin: 20px;
 color: darkblue;
 background-color: lightblue;
