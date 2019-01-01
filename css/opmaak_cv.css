@@ -46,6 +46,8 @@ overflow: auto;
     margin: 5px;
     float: left;
     padding:10px;
+    text-align: center;
+    vertical-align: middle;
     background-color: rgb(13, 116, 18);
     color: beige;
     font-weight: bold;
