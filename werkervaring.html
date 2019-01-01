@@ -3,111 +3,117 @@
 
 <html>
 
-<head>
-    <meta charset="UTF-8">
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel='stylesheet' type='text/css' href="css/opmaak_cv.css" >
     
-<style>
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-}
-a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-}
-</style>
-
-<link rel='stylesheet' type='text/css' href="css/opmaak_cv.css" >
-
-</head>
-
+     </head>
+    
 <!-- // https://www.w3schools.com/csS/css3_buttons.asp -->
 
       
 <body>
 
- <!-- Side navigation -->
- <div class="sidenav">
-        
+ <!-- navigation -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index_cv.html">Terug naar CV <span class="sr-only">(current)</span></a>
+              </li>
 
-    <a href="index_cv.html">terug</a>
+<!--  if required, use the disabled links here  
+                <li class="nav-item">
+          <a class="nav-link disabled" href="#!">Disabled</a>
+        </li>
+    -->
+      </ul>
+    </div>
+  </nav>
 
-  </div>
-  
-    <div id="firstbox">
+
+  <div class="row">
+        <div class="col-2">
+                <!-- Content, left side free space -->
+              </div>
+    
+    <div id="firstbox" class="col-8">
  <p id="openpar">
+     <b>
     <h2>Werkervaring</h2>
     <br><br>
     nov 2018-heden<br>
     Junior webontwikkelaar bij CodeGorilla<br>
 	<br>
     Sept 2013 – okt 2015<br>
-    Systeem Ontwikkelaar/Analist <br>
-    In eigen tijd m.b.v. Access, Excelsheets bezig geweest met maken van handleidingen.<br>
-    Systeem voor ondersteuning van gebruikers van Settlers Online.<br>
+    Systeemontwikkelaar/-analist <br>
+    In eigen tijd m.b.v. Access, Excelsheets bezig geweest met maken van handleidingen. Systeem voor ondersteuning van gebruikers van Settlers Online.<br>
 	<br>
     Juni 2010 – juni 2013<br>
-    Systeem Ontwikkelaar/Analist Applicatiebeheerder, Werkvoorbereider/planner<br>
-    Thole Toegangssystemen B.V.<br>
+    Systeemontwikkelaar/-analist Applicatiebeheerder, Werkvoorbereider/planner bij Thole Toegangssystemen B.V.<br>
 	<br>
     September 1998 – April 2009<br>
-    Systeem Ontwikkelaar/Analist (gedetacheerd)<br>
-    Proface (Later Qface)<br>
+    Systeemontwikkelaar/-analist (gedetacheerd bij Proface (Later Qface en Systhema Informatietechnologie B.V.))<br>
     <br>
     Vóór deze periode;<br>
     <br>
     1984-1990 Beroepsmilitair, militaire inlichtingendienst.<br>
-    <br>
     1990-1992 Ambtenaar, militaire inlichtingendienst.<br>
-	<br>    
-    1992-1993 Directeur/eigenaar Twentehallen Enschede.<br>
-    -Evenementencentrum met squash/tennis/zaalvoetbal. <br>
-    Organisatie van concerten (o.a. Golden Earring, Normaal, 2 Unlimited) en diverse sportevenementen en beurzen.<br>
+	1992-1993 Directeur/eigenaar Twentehallen Enschede. (Evenementencentrum met squash/tennis/zaalvoetbal.) <br>
+    Organisatie van concerten (o.a. Golden Earring, Normaal, 2 Unlimited) en diverse sportevenementen (o.a. grootste zaalvoetbaltoernooi ter wereld) en beurzen.<br>
+    </b>
 </p>
 
     </div>
+    <div class="col-2">
+            <!-- Content, right side free space -->
+          </div>
 
+</div> <!-- end first row-->
 
-<div class="trefwoorden">
+    <div class="row pt-5">
+            <div class="col-2"></div>
 
+<div class="trefwoorden col-4">
     <h2>Werkvoorbereider</h2>
-    
 </div>
 
-<div class="trefwoorden">
 
+<div class="trefwoorden col-4">
     <h2>Systeemontwikkelaar</h2>
-            
+</div>
+    <div class="col-2"></div>
+</div> <!-- end second row -->
+
+<div class="row pt-5">
+        <div class="col-2"></div>
+
+<div class="trefwoorden col-4">
+    <h2>Bedrijfsleider</h2>
 </div>
 
-<div class="trefwoorden">
-                    <h2>Bedrijfsleider</h2>
-                                       
 
+<div class="trefwoorden col-4">
+    <h2>Militair</h2>
 </div>
+    <div class="col-2"></div>
+</div> <!-- end third row -->
 
-<div class="trefwoorden">
-                            <h2>Militair</h2>
-                            
-</div>
-                                            
-        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <script>
-
-</script>
 
 </body>
 
