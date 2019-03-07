@@ -1,8 +1,7 @@
 
    body {
-    background-image :url("../images/CodeGorilla_Alex_01.jpg");
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+    background: url("../images/CodeGorilla_Alex_01.jpg") no-repeat center center fixed;
+    background-size: cover; 
     }  
 
 /*
