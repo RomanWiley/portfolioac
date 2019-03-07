@@ -17,7 +17,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #49eed2;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
@@ -27,6 +27,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* navigation */
 
 ul {
   list-style-type: none;
@@ -48,15 +49,15 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdownmenu:hover .dropbtn {
   background-color: red;
 }
 
-li.dropdown {
+li.dropdownmenu {
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdownmenu-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -65,17 +66,18 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdownmenu-content a {
   color: black;
+  background-color: #57f4ff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdownmenu-content a:hover {background-color: #57f4ff}
 
-.dropdown:hover .dropdown-content {
+.dropdownmenu:hover .dropdownmenu-content {
   display: block;
 }
   </style>
@@ -87,9 +89,9 @@ li.dropdown {
  <ul>
   <li><a href="/">Home</a></li>
   <li><a href="myworks.html">myworks</a></li>
-  <li class="dropdown">
+  <li class="dropdownmenu">
     <a href="#" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
+    <div class="dropdownmenu-content">
       <a href="/index_cv.html">CV</a>
       <a href="/index_lp.html">Leerplan</a>
       <a href="/kenniscluster.html">Kenniscluster</a>
@@ -97,21 +99,16 @@ li.dropdown {
   </li>
 </ul>
 
-          
-              
-                <div class="fixed" id="firstbox">
-            <!-- de kleine foto -->
-                <img src="images/image_06.jpg" style="width: 17%; height: auto; float: right; border-radius: 20%">
-            
-                <h2 style="font-size: 2.3vw; color: blue"><b>Inleiding</b></h2>
-                <br>
-                <div style="color: blue"><b>Deze portfolio dient om informatie te verstrekken over mij, Alex Coenen.<br><br>
-                Navigeer via de tekst onder of de linker navigatiebalk.<br>
-                Als de kleur van de knoppen hieronder verandert in bruin, gaat het om een trefwoord van toepassing op het betreffende onderwerp.</b>
-                </div>
-                </div>
-          </div>
-
+<br>
+<div style="font-size: 400%; text-align: center; color: white; text-shadow: 1px 1px 1px #000, 3px 3px 5px blue;">CSS voorbeeld pagina</div><br>
+<div style="font-size: 200%; color: white; text-shadow: 1px 1px 1px #000, 3px 3px 5px blue;">
+<br>
+Om een aantal voorbeeldjes te maken met elementen die gebruik maken van CSS heb ik deze pagina gebruikt.
+<br>
+Om te beginnen een zogenaamde Navbar, een menu om te kunnen navigeren.
+De Navbar bevat ook een dropdown-menu waarin je ook nog extra kunt navigeren.
+<br><br>
+Voor knop-navigatie heb ik onderstaande custom knopjes gemaakt.<br>
 <div class="dropdown">
     <div class="onderdelen">Index CV</div>
     <div class="dropdown-content">
@@ -121,37 +118,63 @@ li.dropdown {
     </div>
   </div>
 
-<div class="dropdown">
-    <div class="onderdelen">Leerplan</div>
-    <div class="dropdown-content">
-        <div id="div_indexlp">
-          <h2 id="h2_indexlp">Leerplan</h2>
-        </div>
-    </div>
-</div>
-
-<div class="dropdown">
-    <div class="onderdelen">Game</div>
-    <div id="div_game">
+  <div class="dropdown">
+      <div class="onderdelen">Leerplan</div>
       <div class="dropdown-content">
-        <h2 id="h2_game">Game</h2>
+          <div id="div_indexlp">
+            <h2 id="h2_indexlp">Leerplan</h2>
+          </div>
       </div>
-    </div>
+  </div>
+  
+  <div class="dropdown">
+      <div class="onderdelen">Game</div>
+      <div id="div_game">
+        <div class="dropdown-content">
+          <h2 id="h2_game">Game</h2>
+        </div>
+      </div>
+  </div>
+  
+  <div class="dropdown">
+      <div class="onderdelen">My Works</div>
+        <div id="div_myworks">
+            <div class="dropdown-content">
+            <h2 id="h2_myworks">My works</h2>
+        </div>
+      </div>
+  </div>
+<br>
+  
+Wat CSS betreft, gebruik gemaakt van inline-styling, een CSS file, classes en elementen om de verschillende manieren van toepassen van CSS te practiseren.
+<br><br>
+Over smaak valt natuurijk te twisten, maar het ging mij bij het maken van de pagina om de techniek, niet zozeer om wat iemand mooi zal vinden.
 </div>
+              
+                <div class="fixed" id="firstbox">
+            <!-- de kleine foto -->
+                <img src="images/image_06.jpg" style="width: 17%; height: auto; float: right; border-radius: 20%">
+            
+                <h2 style="font-size: 2.3vw; color: blue"><b>Inleiding (klik om te verbergen)</b></h2>
+                <br>
+                <div style="color: blue"><b>Deze portfolio dient om informatie te verstrekken over mij, Alex Coenen.<br><br>
+                Navigeer via de tekst onder of de linker navigatiebalk.<br>
+                Als de kleur van de knoppen hieronder verandert in bruin, gaat het om een trefwoord van toepassing op het betreffende onderwerp.</b>
+                </div>
+                </div>
+          </div>
 
-<div class="dropdown">
-    <div class="onderdelen">My Works</div>
-      <div id="div_myworks">
-          <div class="dropdown-content">
-          <h2 id="h2_myworks">My works</h2>
-      </div>
-    </div>
-</div>
 
                                             
 <script>
+            // click on firstox, hide the element
+            document.getElementById("firstbox").addEventListener("click", func_hidefb);
+        function func_hidefb() {
+          document.getElementById("firstbox").style.visibility = "hidden";
+      }        
+
             // click on CV-button, open app in current window
-                document.getElementById("div_indexcv").addEventListener("click", func_CV);
+            document.getElementById("div_indexcv").addEventListener("click", func_CV);
         function func_CV() {
                 window.open("https://portfolioac.herokuapp.com/index_cv.html", "_self")
       }        

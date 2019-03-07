@@ -1,7 +1,7 @@
 
    body {
     background: url("../images/CodeGorilla_Alex_01.jpg") no-repeat center center fixed;
-    background-size: cover; 
+    -webkit-background-size: cover; 
     }  
 
 /*
@@ -24,7 +24,7 @@ div.fixed {
   
 
 #firstbox { /* de ' houder' voor de intro-tekst */
-height: 40%; width: 80%;
+height: 30%; width: 70%;
 margin: 20px;
 padding: 15px;
 color: rgb(226, 240, 148);
@@ -45,10 +45,12 @@ background-size: cover;
 
 .onderdelen
 {
-    width: 60%;
-    margin: 5px;
+    position: sticky;
+    width: 80%;
+    margin: 50px;
     float: left;
     padding:10px;
+    font-size: 80%;
     text-align: center;
     vertical-align: middle;
     background-color: rgb(45, 179, 212);
