@@ -1,0 +1,154 @@
+<!doctype HTML>
+<title>Page for CSS Alex Coenen</title>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href="css/opmaakvink.css" >
+
+ </head>
+      
+<body>
+
+ <!-- Side navigation -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                  <a class="nav-link"  href="https://portfolioac.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="index_cv.html">CV <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="index_lp.html">Leerplan <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="https://flappybirdac.herokuapp.com/">Game <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="https://portfolioac.herokuapp.com/myworks.html">My Works <span class="sr-only">(current)</span></a>
+                </li>
+
+<!--  if required, use the disabled links here  
+                  <li class="nav-item">
+            <a class="nav-link disabled" href="#!">Disabled</a>
+          </li>
+      -->
+        </ul>
+      </div>
+    </nav>
+
+<div class="row" >
+          <div class="col-2">
+            <!-- Content, left side free space -->
+          </div>
+
+          <div class="col-8" style="font-size: 1.4vw">
+              
+                <div id="firstbox">
+            
+                <img src="images/image_06.jpg" style="width: 17%; height: auto; float: right; border-radius: 20%">
+            
+                <h2 style="font-size: 2.3vw"><b>Inleiding</b></h2>
+                <br>
+                <b>Deze portfolio dient om informatie te verstrekken over mij, Alex Coenen.<br><br>
+                Navigeer via de tekst onder of de linker navigatiebalk.<br>
+                Als de kleur van de knoppen hieronder verandert in bruin, gaat het om een trefwoord van toepassing op het betreffende onderwerp.</b>
+
+                </div>
+          </div>
+          <div class="col-2">
+                      <!-- Content, right side free space -->
+                    </div>
+        </div>
+        <div class="row pt-5">
+                <div class="col-2">
+                      <!-- Content, hier lege ruimte voor layout -->
+                   
+                </div>
+
+<!-- upper left button-->
+<div class="onderdelen col-4" id="div_indexcv" >
+      <h2 id="h2_indexcv">CV</h2>
+</div>
+
+<!-- upper right button -->
+<div class="onderdelen col-4" id="div_indexlp">
+      <h2 id="h2_indexlp">Leerplan</h2>
+</div>
+                    <div class="col-2">
+                  <!-- Content -->
+                </div>
+              </div><!-- end of row 1 with buttons -->
+                    <div class="row pt-5" >
+                            <div class="col-2">
+                      <!-- Content, hier lege ruimte voor layout -->
+                       
+                    </div>
+<!-- lower left button-->
+<div class="onderdelen col-4" id="div_game" >
+            <h2 id="h2_game">Game</h2>
+      </div>
+
+<!-- lower left button-->
+<div class="onderdelen col-4" id="div_myworks" >
+            <h2 id="h2_myworks">My works</h2>
+      </div>
+
+                            <div class="col-2">
+                      <!-- Content -->
+                    </div>
+                  </div>
+                                            
+<script>
+            // click on CV-button, open app in current window
+                document.getElementById("div_indexcv").addEventListener("click", func_CV);
+        function func_CV() {
+                window.open("https://portfolioac.herokuapp.com/index_cv.html", "_self")
+      }        
+
+      // click on Leerplan-button, open app in current window
+      document.getElementById("div_indexlp").addEventListener("click", func_Leerplan);
+        function func_Leerplan() {
+                window.open("https://portfolioac.herokuapp.com/index_lp.html", "_self")
+        }
+        
+            // click on Game-button, open app in current window      
+      document.getElementById("div_game").addEventListener("click", func_game);
+        function func_game() {
+                window.open("https://portfolioac.herokuapp.com/flappybird2/index.php", "_blank")
+        }
+        
+            // click on My Works-button, open app in current window
+      document.getElementById("div_myworks").addEventListener("click", func_myworks);
+        function func_myworks() {
+                window.open("https://portfolioac.herokuapp.com/myworks.html", "_self")
+        }
+        
+        </script>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+$(function(){
+  $('[data-toggle="popover"]').popover()
+});
+
+$('#bigtext').bigtext();
+</script>
+
+</body>
+
+</html>
+
