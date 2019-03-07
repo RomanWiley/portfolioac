@@ -1,6 +1,6 @@
 
    body {
-    background-image :url("../images/background_01.jpg");
+    background: url("../images/background_01.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
     /* background-size: cover; */
     }  
@@ -14,7 +14,14 @@
     padding: 10px;
 }
 */
-
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+  
 
 #firstbox { /* de ' houder' voor de intro-tekst */
 height: 100%; width: 100%;
